@@ -1,0 +1,17 @@
+:root { --rotary-blue: #17458F; --rotary-gold: #F7A81B; --white: #FFFFFF; --dark: #1a1a1a; }
+* { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+body { font-family: 'Open Sans', sans-serif; color: var(--dark); line-height: 1.6; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+header { background: var(--white); padding: 15px 0; border-bottom: 4px solid var(--rotary-gold); position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; font-weight: 800; color: var(--rotary-blue); text-transform: uppercase; }
+.logo img { height: 40px; margin-right: 10px; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { text-decoration: none; color: var(--rotary-blue); font-weight: 700; }
+.btn-gold { background: var(--rotary-gold); color: white !important; padding: 8px 15px; border-radius: 4px; }
+.hero { background: linear-gradient(rgba(23,69,143,0.8), rgba(23,69,143,0.8)), url('hero.jpg') center/cover; height: 70vh; display: flex; align-items: center; color: white; text-align: center; }
+.hero h1 { font-size: 3.5rem; font-weight: 800; }
+.donate-section { background: var(--rotary-blue); color: white; padding: 80px 0; }
+.payment-box { background: white; padding: 30px; border-radius: 10px; text-align: center; color: var(--dark); }
+.pay-btn { display: block; padding: 12px; background: #011b33; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; }
+footer { background: var(--dark); color: white; text-align: center; padding: 40px 0; }
