@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
         <nav class="container">
             <div class="logo-area">
                 <svg width="40" height="40" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="45" fill="#F7A81B" />
-                    <circle cx="50" cy="50" r="36" fill="none" stroke="#17458F" stroke-width="5" />
-                    <path d="M50 12 L50 88 M12 50 L88 50" stroke="#17458F" stroke-width="4"/>
-                    <circle cx="50" cy="50" r="10" fill="#17458F" />
+                    <circle cx="50" cy="50" r="45" fill="var(--rotary-gold)" />
+                    <circle cx="50" cy="50" r="36" fill="none" stroke="var(--rotary-blue)" stroke-width="5" />
+                    <path d="M50 12 L50 88 M12 50 L88 50" stroke="var(--rotary-blue)" stroke-width="4"/>
+                    <circle cx="50" cy="50" r="10" fill="var(--rotary-blue)" />
                 </svg>
                 <span class="club-name">Abuja HighRise</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#focus">Focus</a></li>
-                <li><a href="#projects">Impact</a></li>
+                <li><button id="theme-toggle" class="theme-btn">??</button></li>
                 <li><a href="https://paystack.com" class="btn-apple">Contribute</a></li>
             </ul>
         </nav>
@@ -36,14 +36,13 @@
         <div class="hero-text container">
             <span class="badge">District 9127</span>
             <h1>Service. Elevated.</h1>
-            <p>The Rotary Club of Abuja HighRise is pioneering humanitarian excellence across Northern Nigeria.</p>
+            <p>The Rotary Club of Abuja HighRise is pioneering humanitarian excellence.</p>
         </div>
     </section>
 
     <section id="focus" class="focus-section container">
         <div class="section-intro">
             <h2>Our 7 Areas of Focus</h2>
-            <p>Targeted action for sustainable global change.</p>
         </div>
         <div class="focus-grid">
             <div class="focus-card"><span>???</span><h3>Peacebuilding</h3></div>
@@ -56,10 +55,6 @@
         </div>
     </section>
 
-    <footer class="apple-footer">
-        <div class="container">
-            <p>&copy; 2026 Rotary Club of Abuja HighRise. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
