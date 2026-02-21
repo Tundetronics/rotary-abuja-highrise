@@ -1,0 +1,79 @@
+:root {
+    --rotary-blue: #17458F;
+    --rotary-gold: #F7A81B;
+    --white: #FFFFFF;
+    --dark: #1a1a1a;
+    --gray: #f4f7fa;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+body { font-family: 'Open Sans', sans-serif; color: var(--dark); line-height: 1.6; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+
+/* HEADER & CLICKABLE NAV FIX */
+header { 
+    background: var(--white); 
+    padding: 10px 0; 
+    border-bottom: 4px solid var(--rotary-gold); 
+    position: sticky; 
+    top: 0; 
+    z-index: 9999; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+nav { display: flex; justify-content: space-between; align-items: center; position: relative; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo img { height: 50px; width: auto; }
+.logo-text { display: flex; flex-direction: column; }
+.club-name { font-weight: 800; color: var(--rotary-blue); text-transform: uppercase; font-size: 1rem; }
+.district-id { font-size: 0.75rem; color: var(--rotary-gold); font-weight: 700; }
+
+.nav-links { display: flex; list-style: none; gap: 20px; align-items: center; z-index: 10000; }
+.nav-links a { text-decoration: none; color: var(--rotary-blue); font-weight: 700; font-size: 0.9rem; cursor: pointer; }
+.btn-gold-nav { background: var(--rotary-gold); color: white !important; padding: 8px 16px; border-radius: 4px; }
+
+/* HERO */
+.hero { 
+    background: linear-gradient(rgba(23,69,143,0.85), rgba(23,69,143,0.85)), url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=1200') center/cover; 
+    height: 60vh; 
+    display: flex; 
+    align-items: center; 
+    color: white; 
+    text-align: center;
+}
+.pre-title { color: var(--rotary-gold); text-transform: uppercase; font-weight: 800; letter-spacing: 2px; font-size: 0.8rem; display: block; margin-bottom: 10px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 20px; }
+.hero-btns { display: flex; gap: 15px; justify-content: center; }
+.btn-white { background: white; color: var(--rotary-blue); padding: 12px 25px; text-decoration: none; font-weight: 800; border-radius: 4px; }
+.btn-outline { border: 2px solid white; color: white; padding: 10px 25px; text-decoration: none; font-weight: 800; border-radius: 4px; }
+
+/* LEADERSHIP CARDS */
+.leadership-section { padding: 80px 0; background-color: var(--gray); }
+.leadership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.leadership-card { background: white; padding: 40px; border-radius: 12px; border-top: 5px solid var(--rotary-blue); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.leadership-card.highlight { border-top: 5px solid var(--rotary-gold); }
+.leader-content p { font-style: italic; margin: 15px 0; color: #555; }
+
+/* ABOUT & GALLERY */
+.about-section { padding: 80px 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.map-placeholder { background: var(--gray); height: 250px; border-radius: 10px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; color: #888; font-weight: 700; }
+
+.section-title { text-align: center; color: var(--rotary-blue); margin-bottom: 40px; font-size: 2rem; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.gallery-item { position: relative; height: 300px; border-radius: 10px; overflow: hidden; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-overlay { position: absolute; bottom: 0; width: 100%; height: 100%; background: linear-gradient(transparent, rgba(23,69,143,0.9)); display: flex; align-items: flex-end; padding: 20px; }
+.overlay-text h3 { color: white; }
+.tag { background: var(--rotary-gold); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; }
+
+/* DONATE */
+.donate-section { background: var(--rotary-blue); color: white; padding: 50px 0; }
+.donate-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.btn-gold-large { background: var(--rotary-gold); color: white; padding: 15px 35px; text-decoration: none; font-weight: 800; border-radius: 4px; }
+
+footer { background: var(--dark); color: white; padding: 30px 0; text-align: center; }
+
+@media (max-width: 768px) {
+    .leadership-grid, .about-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+}
