@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotary Club of Abuja High Rise | District 9127</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Rotary Abuja High Rise | District 9127</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body class="watermark-bg">
+    <header class="main-header">
         <nav class="container">
-            <div class="logo">
-                <img src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/logo-rotary.png" alt="Rotary International Logo">
-                <span>Abuja High Rise</span>
+            <div class="logo-area">
+                <svg width="45" height="45" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#F7A81B" />
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#17458F" stroke-width="5" />
+                    <path d="M50 20 L50 80 M20 50 L80 50" stroke="#17458F" stroke-width="4"/>
+                    <circle cx="50" cy="50" r="10" fill="#17458F" />
+                </svg>
+                <div class="logo-text">
+                    <span class="club-name">Abuja High Rise</span>
+                    <span class="district-id">District 9127</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Impact</a></li>
-                <li><a href="#join">Join Us</a></li>
-                <li><a href="#donate" class="btn-gold">Donate</a></li>
+                <li><a href="#donate" class="nav-cta">Donate</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="http://googleusercontent.com/generated_video_content/12130703399860979447" type="video/mp4">
+            </video>
+        </div>
         <div class="hero-content container">
-            <h1>Unite for Good.</h1>
-            <p>Creating lasting impact in District 9127.</p>
-            <a href="#projects" class="btn-white">See Our Impact</a>
+            <h1>People of Action.</h1>
+            <p>Serving Abuja and 16 Northern States in District 9127.</p>
         </div>
     </section>
 
-    <section id="about" class="container section">
-        <h2>About District 9127</h2>
-        <p>Serving Abuja and 16 states across Northern Nigeria. We are a community of People of Action dedicated to service above self.</p>
-    </section>
-
-    <section id="donate" class="donate-section">
+    <section id="donate" style="padding:100px 0; text-align:center;">
         <div class="container">
-            <h2>Secure Giving</h2>
-            <p>Support our projects in Abuja High Rise.</p>
-            <a href="https://paystack.com" class="pay-btn">Contribute via Paystack</a>
+            <h2>Support Our Mission</h2>
+            <a href="https://paystack.com" class="nav-cta" style="font-size:1.5rem; padding:20px 40px;">Contribute via Paystack</a>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2026 Rotary Club of Abuja High Rise | District 9127</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
